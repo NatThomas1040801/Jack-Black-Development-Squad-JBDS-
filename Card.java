@@ -1,4 +1,14 @@
 public interface Card{
+  // i was here
+  public Card(int id) {
+    this.ID = id;
+    String[] suites = { "♠", "♥", "♦", "♣" };
+    this.suite = suites[id / 13];
+    String[] faces = { "A", "K", "Q", "J" };
+    int n = id % 13;
+    this.card = ((n < 1 && n > 8) ? faces[n % 8] : n + 1 + "");
+  }
+
   // Gets a random card from the would-be complete deck of cards
   public Card getRandom();
 
