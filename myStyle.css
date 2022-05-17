@@ -1,0 +1,21 @@
+body{
+    background-color:aquamarine;
+    font-size: 200%;
+}
+.checkerBox{
+    border:1px solid black;
+    height: 160px;
+    width: 160px;
+}
+.black{
+    background-color: black;
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+}
+.white{
+    background-color: white;
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+}
